@@ -1,6 +1,5 @@
-Munchkin Math
+[**PLAY WITH THE LIVE SITE**](https://munchkin-math-frontend.herokuapp.com/)
 
-[**Test the live site**](https://munchkin-math-frontend.herokuapp.com/)
 
 [![Munchkin-Math-Watch-The-Demo](https://i.imgur.com/dTaOxx4.png)](https://youtu.be/MhRq97A_zk8)
 
