@@ -7,7 +7,7 @@ const bodySecondTitle = document.querySelector(".bodySecondTitle");
 const fetchUsers = () => fetch(usersUrl).then(response => response.json());
 const totalScoreboard = document.querySelector(".totalScoreboard");
 
-const baseUrl = "http://localhost:3000/";
+const baseUrl = "https://munchkin-math-backend.herokuapp.com/";
 const usersUrl = `${baseUrl}users/`;
 const testsUrl = `${baseUrl}tests/`;
 const questionsUrl = `${baseUrl}questions/`;
