@@ -1,0 +1,124 @@
+.holderDiv {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.imageDiv {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+.imageHolder {
+  height: 250px;
+}
+
+.answerP {
+  text-align: center;
+  vertical-align: middle;
+  justify-content: center;
+  color: black;
+  font-size: 7em;
+  margin: 0;
+  padding: 0;
+  text-shadow: 6px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.fill {
+  display: flex;
+  justify-content: space-around;
+  background-image: url("https://i.imgur.com/yIS9HuQ.png");
+  background-position: center;
+  background-size: contain;
+  position: relative;
+  height: 250px;
+  width: 250px;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.empty {
+  display: flex;
+  justify-content: space-around;
+  display: inline-block;
+  height: 160px;
+  width: 160px;
+  margin: 10px;
+  border: 3px black solid;
+  background-color: white;
+}
+
+.hold {
+  border: solid orange 4px;
+}
+
+.hovered {
+  background: rgba(255, 154, 2, 0.7);
+  border-style: dashed;
+}
+
+.invisible {
+  display: none;
+}
+
+.correctDiv {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrongDiv {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+@keyframes grading {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.nextQuestionArrow {
+  height: auto;
+  width: 20%;
+  animation-timing-function: ease-in-out;
+  animation-name: grading;
+  animation-duration: 1.5s;
+  animation-iteration-count: 3;
+}
+
+.correctImg {
+  height: 60%;
+  width: auto;
+  animation-name: markTesting;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.wrongImg {
+  height: 60%;
+  width: auto;
+  animation-name: markTesting;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+@keyframes markTesting {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(20);
+    opacity: 0;
+  }
+}
